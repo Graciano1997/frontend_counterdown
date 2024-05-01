@@ -6,7 +6,6 @@ import Footer from './Component/Footer'
 function App() {
   
   const [totalSecond, setTotalSecond] = useState(1209600);
- 
   const [timeObject, setTimeObject] = useState({
     day:parseInt(totalSecond/86400),
     hour:parseInt(totalSecond%86400/3600),
@@ -30,8 +29,6 @@ function App() {
         <Counter timeObject={timeObject} />
       </main>
       <Footer/>
-
-
     </>
   )
 }
