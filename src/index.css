@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  background-image: url('./assets/images/bg-stars.svg');
+  /* background-color: hsl(235, 16%, 14%); */
+  background-color: hsl(234, 17%, 12%);
+  
+  color: white;
+}
+

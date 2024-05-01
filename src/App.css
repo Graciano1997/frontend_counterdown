@@ -1,0 +1,135 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-image: url('./assets/images/pattern-hills.svg');
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.netwoksContainer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.netwoksContainer li {
+  list-style: none;
+}
+
+.netwoksContainer li button {
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 100%;
+  padding: 0.8rem;
+  cursor: pointer;
+  border: transparent;
+  transition: all 1s ease-in-out;
+}
+
+#facebookItem {
+  background-image: url('./assets/images/icon-facebook.svg');
+}
+
+#pinterestItem {
+  background-image: url('./assets/images/icon-pinterest.svg');
+}
+
+#instagramItem {
+  background-image: url('./assets/images/icon-instagram.svg');
+}
+
+#facebookItem:hover {
+  background-image: url('./assets/images/icon-facebookSoftRed.svg');
+}
+
+#pinterestItem:hover {
+  background-image: url('./assets/images/icon-pinterestSoftRed.svg');
+}
+
+#instagramItem:hover {
+  background-image: url('./assets/images/icon-instagramSoftRed.svg');
+}
+
+
+.counterContainer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 28px;
+}
+
+.counterItem {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  color: hsl(237, 18%, 59%);
+}
+
+.counterItem div {
+  background-color: hsl(236, 21%, 26%);
+  /* background-color: hsl(235, 16%, 14%); */
+  /* background: linear-gradient(); */
+  width: 150px;
+  height: 130px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  /* box-shadow: 0 0 20px 0 black; */
+  transition: all 1.5s ease-in-out;
+}
+
+.counterItem div h1{
+  color:hsl(345, 95%, 68%);
+  font-size: 70px;
+
+}
+
+@media screen and (max-width:375px) {
+  .counterContainer{
+    margin: 0.5rem;
+    margin-top: 5rem;
+  }
+  .counterItem {
+    gap: 9px;
+  } 
+  .counterItem div{
+    width: 100%;
+    height: 95%;
+    padding: 0.3rem;
+    }
+    .counterItem div h1{
+      font-size: 50px;
+    }
+}
+@media screen and (min-width:376px) and (max-width:768px) {
+  .counterContainer{
+    margin: 0.5rem;
+    margin-top: 5rem;
+  }
+  .counterItem {
+    gap: 9px;
+  } 
+  .counterItem div{
+    width: 80px;
+    height: 75px;
+    }
+    .counterItem div h1{
+      font-size: 50px;
+    }
+}
