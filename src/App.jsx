@@ -11,7 +11,8 @@ function App() {
     hour:parseInt(totalSecond%86400/3600),
     min:parseInt(((totalSecond%86400)%3600)/60),
     seconds:parseInt(((totalSecond%86400)%3600)%60)});
-
+    
+    if(totalSecond!==0){
       setTimeout(()=>{
         setTotalSecond(totalSecond-1);
         setTimeObject({
@@ -21,7 +22,8 @@ function App() {
           seconds:parseInt(((totalSecond%86400)%3600)%60)}
         );
       },1000);
-  
+    }
+      
   return (
     <>
       <main className='mainContainer'>

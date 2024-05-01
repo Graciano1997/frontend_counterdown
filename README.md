@@ -33,13 +33,10 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-
-
-
 ### Links
 
-- Solution URL: [solution URL](https://github.com/Graciano1997/social_link_profile/)
-- Live Site URL: [live site URL](https://graciano1997.github.io/social_link_profile/)
+- Solution URL: [solution URL](https://github.com/Graciano1997/frontend_counterdown/)
+- Live Site URL: [live site URL](https://frontend-counterdown.vercel.app/)
 
 ## My process
 
@@ -50,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-I recap the display flex.
+I recap the React Use State.
 
 To see how you can add code snippets, see below:
 
@@ -71,14 +68,16 @@ To see how you can add code snippets, see below:
   font-optical-sizing: auto;
   font-style: normal;
 ```
-```js   
- const [totalSecond, setTotalSecond] = useState(1209600);
-  const [timeObject, setTimeObject] = useState({
+```js     
+    
+    const [totalSecond, setTotalSecond] = useState(1209600);
+    const [timeObject, setTimeObject] = useState({
     day:parseInt(totalSecond/86400),
     hour:parseInt(totalSecond%86400/3600),
     min:parseInt(((totalSecond%86400)%3600)/60),
     seconds:parseInt(((totalSecond%86400)%3600)%60)});
-
+    
+    if(totalSecond!==0){
       setTimeout(()=>{
         setTotalSecond(totalSecond-1);
         setTimeObject({
@@ -88,6 +87,7 @@ To see how you can add code snippets, see below:
           seconds:parseInt(((totalSecond%86400)%3600)%60)}
         );
       },1000);
+    }
 ```
 
 
